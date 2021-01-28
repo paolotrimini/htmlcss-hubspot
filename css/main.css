@@ -32,6 +32,7 @@ header{
 
 .top-header {
     height: 50%;
+    margin: 0 10%;
     /*debug*/
     background-color: greenyellow;
     position: relative;
@@ -49,7 +50,16 @@ header{
 
 #nav-contatti li, #nav-login li {
     display: inline-block;
+    text-decoration: none;
+
 }
+/*caratteristiche generali dei link*/
+
+#nav-contatti li a, #nav-login li a {
+    text-decoration: none;
+
+}
+
 
 /*#nav-contatti li, #nav-login li {
     display: inline-block;
