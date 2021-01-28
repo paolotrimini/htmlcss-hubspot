@@ -98,31 +98,109 @@ header{
     line-height: 200px;
 }
 
-.row {
+.row-servizi {
     width: 80%;
     margin: 10px auto;
 }
-.row::after {
+
+.row-servizi::after {
     content: "";
     display: table;
     clear: both;
     /* background-color: #4682B4; */
 }
 
-/*blocco scacchiera*/
+/*blocco scacchiera */
 
-.blocco-scacchiera {
+.blocco-learn {
     /*debug*/
-    background-color: mediumvioletred;
-    height: 400px;
+    background-color: blueviolet;
+    height: 150px;
     /*margin-bottom: 30px;*/
+    text-align: center;
+    line-height: 200px;
 }
+
+.row-scacchiera {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row-scacchiera::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* background-color: #4682B4; */
+}
+
+.col-1 {
+    float: left;
+    width: 25%;
+    /*height: 200px;*/
+    /*debug*/
+    background-color: indianred;
+    text-align: center;
+    line-height: 200px;
+}
+.col-2 {
+    float: left;
+    width: 25%;
+    /*height: 200px;*/
+    /*debug*/
+    background-color: red;
+    text-align: center;
+    line-height: 200px;
+}
+.col-3 {
+    float: left;
+    width: 25%;
+   /* height: 200px;*/
+    /*debug*/
+    background-color: indianred;
+    text-align: center;
+    line-height: 200px;
+}
+.col-4 {
+    float: left;
+    width: 25%;
+   /* height: 200px;*/
+    /*debug*/
+    background-color: red;
+    text-align: center;
+    line-height: 200px;
+}
+
+ /* regole sezione loghi */
+
+.row-counter {
+    width: 70%;
+    margin: 10px auto;
+}
+
+.row-counter::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* background-color: #4682B4; */
+}
+
+.counter {
+    float: left;
+    width: 50%;
+    /* height: 200px;*/
+    /*debug*/
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 200px;
+}
+
 
 /* sezione footer */
 
 footer{
     height: 300px;
-    margin-top: 20px;
     /*debug*/
     background-color: slategray;
+    text-align: center;
+    line-height: 200px;
 }
