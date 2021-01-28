@@ -121,26 +121,58 @@ header{
 /* regole 1^a sezione */
 
 .blocco-principale {
-  /*debug*/
-    background-color: #fff2ee;
-    height: 550px;
+    position: relative;
+    height: 600px;
     margin-top: 100px; /* parte alla fine dell'header*/
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom right;
+    object-fit: cover;
+    background-position: 75% 10%;
+    /* background-size: 100%;*/
+    /*background-position: bottom right;*/
     /*margin-bottom: 10px;*/
+    /*debug*/
+    /*background-color: #fff2ee;*/
 }
 
-/*.blocco-interlinea {
+.box-title {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    font-family: 'Poppins', sans-serif;
+    color: #33475b;
+}
+
+.box-title h1 {
+    font-size: 31px;
+}
+
+.box-title p {
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.blocco-interlinea {
     height: 60px;
-    !*debug*!
+    /*debug*/
     background-color: #a6e9e1;
-    !*border-top: 2px solid #33475b;*!
+    border-top: 2px solid #33475b;
     border-bottom: 2px solid #33475b;
     text-align: center;
     line-height: 60px;
-}*/
+}
+
+
+.box-title .hubfree a {
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.box-title .free-tools {
+    margin-top: 50px;
+}
 
 /* regole 2^a sezione (blocco con float) */
 
