@@ -25,7 +25,8 @@ header{
     width: 100%;
     font-size: 12px;
     /*debug*/
-    background-color: #F5FFFA;
+    /*background-color: #F5FFFA;*/
+    background-color: #f5f8fa;
     position: fixed;
     top: 0;
     left: 0;
@@ -48,24 +49,26 @@ header{
 #nav-login ul {
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 5%;
 }
 
-#nav-contatti li, #nav-login li {
+#nav-contatti li, #nav-login li, #nav-servizi li {
     display: inline-block;
-    text-decoration: none;
     padding: 0 10px;
     margin-top: 12.5px;
-
 }
-/*caratteristiche generali dei link*/
 
-#nav-contatti li a, #nav-login li a {
+/* caratteristiche generali dei link */
+
+/* colore font principale: #33475b */
+
+#nav-contatti li a, #nav-login li a, #nav-servizi li a {
     text-decoration: none;
+    color: #33475b;
 }
 
 .contatti li:first-child {
-    border-right: 1px solid black;
+    border-right: 1px solid lightslategray;
 }
 
 .login a, .hubfree a {
@@ -94,14 +97,26 @@ header{
     background-color: rgba(255, 215, 255, 0.9);
 }*/
 
+
+
  /*regole sezione inferiore header*/
 
 .bottom-header {
     height: 50%;
+    position: relative;
     /*debug*/
-    background-color: forestgreen;
+    background-color: #F5FFFA;
 }
 
+#logo img {
+    margin: 10px 11%;
+}
+
+#nav-servizi ul {
+    position: absolute;
+    top: 0;
+    right: 14%;
+}
 
 
 /* regole 1^a sezione */
