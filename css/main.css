@@ -7,6 +7,7 @@
 }
 
  body {
+     font-family: 'Nunito', sans-serif;
      /*debug*/
    /* background-color: slategray;*/
 }
@@ -22,8 +23,9 @@
 header{
     height: 100px;
     width: 100%;
+    font-size: 12px;
     /*debug*/
-    background-color: orangered;
+    background-color: #F5FFFA;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,9 +35,10 @@ header{
 .top-header {
     height: 50%;
     margin: 0 10%;
-    /*debug*/
-    background-color: greenyellow;
     position: relative;
+    /*debug*/
+    /*background-color: lightblue;*/
+
 }
 
 #nav-contatti ul {
@@ -51,19 +54,47 @@ header{
 #nav-contatti li, #nav-login li {
     display: inline-block;
     text-decoration: none;
+    padding: 0 10px;
+    margin-top: 12.5px;
 
 }
 /*caratteristiche generali dei link*/
 
 #nav-contatti li a, #nav-login li a {
     text-decoration: none;
+}
 
+.contatti li:first-child {
+    border-right: 1px solid black;
+}
+
+.login a, .hubfree a {
+    padding: 4px 12px 4px 12px;
+    border-radius: 3px;
+}
+
+.login a {
+    border: 1px solid coral;
+    color: coral;
+}
+
+.login i {
+    color: deepskyblue;
+}
+
+.hubfree a {
+    background-color: coral;
+    color: white;
 }
 
 
-/*#nav-contatti li, #nav-login li {
-    display: inline-block;
+/*regole hover link header*/
+
+/*.login a:hover, .hubfree a:hover {
+    background-color: rgba(255, 215, 255, 0.9);
 }*/
+
+ /*regole sezione inferiore header*/
 
 .bottom-header {
     height: 50%;
@@ -79,6 +110,7 @@ header{
   /*debug*/
     background-color: lightpink;
     height: 400px;
+    margin-top: 100px; /* parte alla fine dell'header*/
     /*margin-bottom: 30px;*/
 }
 
