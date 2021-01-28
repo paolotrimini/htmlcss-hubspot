@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
-/* body {
-  background-color: orange;
-} */
+ body {
+     /*debug*/
+   /* background-color: slategray;*/
+}
 
 /*#container{
     width: 90%;
@@ -20,22 +21,47 @@
 
 header{
     height: 100px;
-    /*margin: 10px 0;*/
+    width: 100%;
     /*debug*/
-    background-color: lightgray;
+    background-color: orangered;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .top-header {
     height: 50%;
     /*debug*/
     background-color: greenyellow;
+    position: relative;
 }
+
+#nav-contatti ul {
+    display: inline-block;
+}
+
+#nav-login ul {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+#nav-contatti li, #nav-login li {
+    display: inline-block;
+}
+
+/*#nav-contatti li, #nav-login li {
+    display: inline-block;
+}*/
 
 .bottom-header {
     height: 50%;
     /*debug*/
     background-color: forestgreen;
 }
+
+
 
 /* regole 1^a sezione */
 
