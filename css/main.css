@@ -265,20 +265,20 @@ main {
     margin-top: 50px;
 }
 
-.learn .orangebutton a {
+.learn .orangebutton a, .left .orangebutton a, .central .orangebutton a, .right .orangebutton a {
     padding: 15px 30px;
     text-decoration: none;
     font-size: 11px;
-    margin-top:20px;
 }
 
 .button-book {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
 .button-book span {
-    display: block;  /* senza, lo span invade il blocco inferiore*/
-    margin-bottom: 50px;
+    display: block;  /* per non invadere bloccoinferiore*/
+    margin-bottom: 30px;
 }
 
 .popular {
@@ -291,7 +291,7 @@ main {
     margin-top: 50px;
 }
 
-.text-popular h3:last-of-type {
+.text-popular h3:last-of-type, .text-marketing h3:last-of-type, .text-sales h3:last-of-type, .text-service h3:last-of-type {
     margin: 15px 0;
     font-weight: 600; /* semibold */
 }
@@ -302,25 +302,29 @@ main {
     font-size: 15px;
 }
 
-li i {
+#row-crm li i, #row-servizi li i {
     color: coral;
 }
 
 
-
 /* regole row servizi */
 
+.left .button-book, .central .button-book, .right .button-book {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
 .linea {
     height: 1px;
-    width: 50%;
+    width: 80%;
     border: 0.8px solid lightslategrey;
-    margin: 15px 28%;
+    margin: 15px 12%;
 }
 
 .img-marketing, .img-service, .img-sales {
     width: 100%;
     height: 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -381,8 +385,18 @@ li i {
 #row-servizi p {
     font-size: 11px;
     margin: 15px 50px 35px 50px;
-
 }
+
+.text-marketing li, .text-sales li, .text-service li {
+    text-decoration: none;
+    /*padding: 0 20px 0 0;*/
+    font-size: 15px;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 40px;
+}
+
+
 
 #row-servizi::after {
     content: "";
