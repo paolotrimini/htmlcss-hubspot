@@ -7,7 +7,6 @@
 }
 
  body {
-     font-family: 'Nunito', sans-serif;
      /*debug*/
    /* background-color: slategray;*/
 }
@@ -24,6 +23,7 @@ header{
     height: 100px;
     width: 100%;
     font-size: 12px;
+    font-family: 'Nunito', sans-serif;
     /*debug*/
     /*background-color: #F5FFFA;*/
     background-color: #f5f8fa;
@@ -117,6 +117,12 @@ header{
     right: 14%;
 }
 
+/* regole main */
+
+main {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f8fa;
+}
 
 /* regole 1^a sezione */
 
@@ -139,7 +145,6 @@ header{
     position: absolute;
     top: 10%;
     left: 11%;
-    font-family: 'Poppins', sans-serif;
     color: #33475b;
 }
 
@@ -148,9 +153,9 @@ header{
 }
 
 .box-title p {
-    font-size: 11px;
     margin-top: 30px;
     margin-bottom: 50px;
+    font-size: 11px;
 }
 
 
@@ -168,23 +173,52 @@ header{
 .box-title .hubfree a {
     padding: 15px 30px;
     text-decoration: none;
+    font-size: 11px;
 }
 
 .box-title .free-tools {
     margin-top: 50px;
+    font-size: 9px;
 }
 
-/* regole 2^a sezione (blocco con float) */
+    /* regole 2^a sezione (blocco con float) */
 
-.blocco-rubik {
-    height: 200px;
+#blocco-rubik {
+    height: 400px;
     width: 80%;
     margin: 10px auto;
     /*debug*/
-    background-color: orange;
+    /*background-color: orange;*/
+    /*text-align: center;
+    line-height: 100px;*/
     text-align: center;
-    line-height: 100px;
+    background-color: #f5f8fa;
 }
+
+
+.cubo {
+    height: 250px;
+    width: 250px;
+    background-color: #f5f8fa;
+    background-image: url(../img/cube.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+#blocco-rubik h2 {
+    font-size: 20px;
+}
+
+#blocco-rubik p {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+
+
+    /* regole blocco crm */
 
 .blocco-crm {
     height: 200px;
