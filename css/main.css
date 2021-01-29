@@ -412,12 +412,21 @@ main {
     background-color: #00adb4;
 }
 
-.text-learn {
-    /*debug*/
-    /*background-color: blueviolet;*/
+/*.text-learn {
+    !*debug*!
+    !*background-color: blueviolet;*!
     height: 150px;
     text-align: center;
 
+}*/
+
+.text-learn {
+    float: left;
+    width: 100%;
+    /*debug*/
+    /*background-color: #87CEFA;*/
+    text-align: center;
+    /*line-height: 200px;*/
 }
 
 .text-learn p, .text-learn h2 {
@@ -434,6 +443,18 @@ main {
     margin: 10px 120px 20px 120px;
 }
 
+
+
+.row-winning::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* background-color: #4682B4; */
+}
+
+
+
+/* inizio tabella */
 
 .row-scacchiera {
     width: 70%;
