@@ -71,7 +71,7 @@ header{
     border-right: 1px solid lightslategray;
 }
 
-.login a, .hubfree a {
+.login a, .orangebutton a {
     padding: 4px 12px 4px 12px;
     border-radius: 3px;
 }
@@ -85,7 +85,7 @@ header{
     color: deepskyblue;
 }
 
-.hubfree a {
+.orangebutton a {
     background-color: coral;
     color: white;
 }
@@ -122,6 +122,7 @@ header{
 main {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f8fa;
+    color: #33475b;
 }
 
 /* regole 1^a sezione */
@@ -170,7 +171,7 @@ main {
 }
 
 
-.box-title .hubfree a {
+.box-title .orangebutton a {
     padding: 15px 30px;
     text-decoration: none;
     font-size: 11px;
@@ -195,7 +196,6 @@ main {
     background-color: #f5f8fa;
 }
 
-
 .cubo {
     height: 250px;
     width: 250px;
@@ -208,28 +208,109 @@ main {
 }
 
 #blocco-rubik h2 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
-#blocco-rubik p {
+#blocco-rubik p, .popular p {
     margin-top: 20px;
     font-size: 11px;
 }
 
 
-
     /* regole blocco crm */
 
-.blocco-crm {
-    height: 200px;
+#row-crm {
+    /*height: 200px;*/
     width: 80%;
     margin: 10px auto;
+    border-radius: 3px;
     /*debug*/
-    background-color: limegreen;
+    background-color: white;
     text-align: center;
-    line-height: 100px;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
+    box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
+  /*  box-shadow: 2px 2px 2px 2px #D3D3D3;
+    -webkit-box-shadow: 2px 1px 3px 1px darkgray;
+    -moz-box-shadow: 2px 2px 5px 1px #D3D3D3;*/
 }
 
+#row-crm::after {
+    content: "";
+    display: table;
+    clear: both;
+    /*background-color: #4682B4;*/
+}
+
+.learn {
+    float: left;
+    width: 40%;
+   /* height: 500px;*/
+    /*debug*/
+   /* background-color: deeppink;*/
+    text-align: center;
+}
+
+
+.img-book {
+    background-image: url(../img/book.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    object-fit: cover;
+    width: 100%;
+    height: 90px;
+    margin-top: 50px;
+}
+
+.learn .orangebutton a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top:20px;
+}
+
+.button-book {
+    margin-top: 30px;
+}
+
+.button-book span {
+    display: block;  /* senza, lo span invade il blocco inferiore*/
+    margin-bottom: 50px;
+}
+
+.popular {
+    float: left;
+    width: 60%;
+    /*height: 500px;*/
+    /*debug*/
+    /*background-color: white;*/
+    text-align: left;
+    margin-top: 50px;
+}
+
+.text-popular h3:last-of-type {
+    margin: 15px 0;
+    font-weight: 600; /* semibold */
+}
+.text-popular li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+    font-size: 15px;
+}
+
+li i {
+    color: coral;
+}
+
+
+
+
+
+
+
+
+
+/* regole row servzi */
 
 .aside {
     float: left;
