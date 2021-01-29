@@ -396,8 +396,6 @@ main {
     margin-left: 40px;
 }
 
-
-
 #row-servizi::after {
     content: "";
     display: table;
@@ -408,23 +406,34 @@ main {
 
 
 
+/* regole blocco counter */
 
-
-
-
-
-
-
-/*blocco scacchiera */
-
-.blocco-learn {
-    /*debug*/
-    background-color: blueviolet;
-    height: 150px;
-    /*margin-bottom: 30px;*/
-    text-align: center;
-    line-height: 200px;
+#container-3 {
+    background-color: #00adb4;
 }
+
+.text-learn {
+    /*debug*/
+    /*background-color: blueviolet;*/
+    height: 150px;
+    text-align: center;
+
+}
+
+.text-learn p, .text-learn h2 {
+    color: white;
+}
+
+.text-learn h2 {
+    margin: 10px 160px 5px 160px;
+    padding: 10px 0 20px 0;
+}
+
+.text-learn p {
+    font-size: 11px;
+    margin: 10px 120px 20px 120px;
+}
+
 
 .row-scacchiera {
     width: 70%;
@@ -435,7 +444,7 @@ main {
     content: "";
     display: table;
     clear: both;
-    /* background-color: #4682B4; */
+     /*background-color: #4682B4;*/
 }
 
 .col-1 {
