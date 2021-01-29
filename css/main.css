@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
- body {
-     /*debug*/
-   /* background-color: slategray;*/
+body {
+    /*debug*/
+    background-color: #f5f8fa;
+
 }
 
 /*#container{
@@ -121,7 +122,7 @@ header{
 
 main {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f8fa;
+    /*background-color: orange;*/
     color: #33475b;
 }
 
@@ -184,16 +185,21 @@ main {
 
     /* regole 2^a sezione (blocco con float) */
 
+
+#container-2 {
+    background-color: #f5f8fa;
+}
+
 #blocco-rubik {
     height: 400px;
     width: 80%;
     margin: 10px auto;
     /*debug*/
-    /*background-color: orange;*/
     /*text-align: center;
     line-height: 100px;*/
     text-align: center;
     background-color: #f5f8fa;
+
 }
 
 .cubo {
@@ -226,12 +232,10 @@ main {
     border-radius: 3px;
     /*debug*/
     background-color: white;
+    /*background-color: #f5f8fa;*/
     text-align: center;
     -webkit-box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
     box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
-  /*  box-shadow: 2px 2px 2px 2px #D3D3D3;
-    -webkit-box-shadow: 2px 1px 3px 1px darkgray;
-    -moz-box-shadow: 2px 2px 5px 1px #D3D3D3;*/
 }
 
 #row-crm::after {
@@ -246,7 +250,7 @@ main {
     width: 40%;
    /* height: 500px;*/
     /*debug*/
-   /* background-color: deeppink;*/
+    background-color: white;
     text-align: center;
 }
 
@@ -282,7 +286,7 @@ main {
     width: 60%;
     /*height: 500px;*/
     /*debug*/
-    /*background-color: white;*/
+    background-color: white;
     text-align: left;
     margin-top: 50px;
 }
@@ -304,46 +308,89 @@ li i {
 
 
 
+/* regole row servizi */
 
+.linea {
+    height: 1px;
+    width: 50%;
+    border: 0.8px solid lightslategrey;
+    margin: 15px 28%;
+}
 
+.img-marketing, .img-service, .img-sales {
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
 
+}
+.img-marketing {
+    background-image: url(../img/marketing.svg);
 
+}
 
+.img-service {
+    background-image: url(../img/service.svg);
 
-/* regole row servzi */
+}
 
-.aside {
+.img-sales {
+    background-image: url(../img/sales.svg);
+
+}
+
+.left, .central, .right {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #33475b;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
+    box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
+}
+
+.left, .right {
     float: left;
     width: 31%;
-    height: 500px;
+    /*height: 500px;*/
     /*debug*/
-    background-color: indianred;
+    /*background-color: indianred;*/
     text-align: center;
-    line-height: 200px;
+    /*line-height: 200px;*/
 }
+
 
 .central {
     float: left;
     width: 31%;
     margin: 0 3.5%;
     /*debug*/
-    background-color: #87CEFA;
-    height: 500px;
+    /*background-color: #87CEFA;*/
+    /*height: 500px;*/
     text-align: center;
-    line-height: 200px;
+    /*line-height: 200px;*/
 }
 
-.row-servizi {
+#row-servizi {
     width: 80%;
-    margin: 10px auto;
+    margin: 30px auto;
+    background-color: #f5f8fa;
 }
 
-.row-servizi::after {
+#row-servizi::after {
     content: "";
     display: table;
     clear: both;
     /* background-color: #4682B4; */
 }
+
+
+
+
+
+
+
+
+
 
 /*blocco scacchiera */
 
