@@ -18,6 +18,8 @@ body {
 }*/
 
 
+
+
 /* regole header */
 
 header{
@@ -92,14 +94,7 @@ header{
 }
 
 
-/*regole hover link header*/
-
-/*.login a:hover, .hubfree a:hover {
-    background-color: rgba(255, 215, 255, 0.9);
-}*/
-
-
- /*regole sezione inferiore header*/
+ /* regole sezione inferiore header */
 
 .bottom-header {
     height: 50%;
@@ -124,6 +119,14 @@ main {
     font-family: 'Poppins', sans-serif;
     /*background-color: orange;*/
     color: #33475b;
+}
+
+/* regole generali button arancioni */
+
+.box-title .orangebutton a, .learn .orangebutton a, .left .orangebutton a, .central .orangebutton a, .right .orangebutton a, .growing a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 11px;
 }
 
 /* regole 1^a sezione */
@@ -172,18 +175,12 @@ main {
 }
 
 
-.box-title .orangebutton a {
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 11px;
-}
-
 .box-title .free-tools {
     margin-top: 50px;
-    font-size: 9px;
+    font-size: 10px;
 }
 
-    /* regole 2^a sezione (blocco con float) */
+/* regole 2^a sezione (blocco con float) */
 
 
 #container-2 {
@@ -195,8 +192,6 @@ main {
     width: 80%;
     margin: 10px auto;
     /*debug*/
-    /*text-align: center;
-    line-height: 100px;*/
     text-align: center;
     background-color: #f5f8fa;
 
@@ -265,11 +260,6 @@ main {
     margin-top: 50px;
 }
 
-.learn .orangebutton a, .left .orangebutton a, .central .orangebutton a, .right .orangebutton a {
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 11px;
-}
 
 .button-book {
     margin-top: 40px;
@@ -349,8 +339,8 @@ main {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     color: #33475b;
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
-    box-shadow: 0px 0px 6px 1px rgba(172,172,172,0.9);
+    -webkit-box-shadow: 0 0 6px 1px rgba(172,172,172,0.9);
+    box-shadow: 0 0 6px 1px rgba(172,172,172,0.9);
 }
 
 
@@ -440,7 +430,7 @@ main {
 
 .text-learn p {
     font-size: 11px;
-    margin: 10px 120px 20px 120px;
+    margin: 10px 13% 20px 13%;
 }
 
 
@@ -582,21 +572,67 @@ main {
     vertical-align: middle;
 }
 
-
-
-
-
-
-
-
 /* fine regole TABELLA*/
 
-/* regole numeri nei box */
+
+
+ /* regole sezione LOGHI */
+
+.customers {
+    text-align: center;
+}
+
+
+.loghi-top img, .loghi-bottom img{
+    height: 15px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.loghi-top, .loghi-bottom {
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    min-width: 100%;
+}
+
+.growing {
+    text-align: left;
+}
+
+.customers p:first-child {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.customers p:first-child, .growing h2:first-child {
+    margin-top:20px;
+
+}
+
+.customers p:nth-child(2), .growing p:nth-child(2) {
+    font-size: 11px;
+}
+
+.customers p:nth-child(2) {
+    margin: 20px 33%;
+}
+
+.growing h2:first-child {
+    font-weight: 600;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+.growing p:last-child {
+   font-size: 10px;
+}
 
 
 
 
- /* regole sezione loghi */
+
 
 .row-counter {
     width: 70%;
@@ -610,18 +646,27 @@ main {
     /* background-color: #4682B4; */
 }
 
-.counter {
+.customers, .loghi, .immagine {
+    text-align: center;
+}
+
+.customers, .loghi, .growing, .immagine {
     float: left;
     width: 50%;
-    /* height: 200px;*/
     /*debug*/
-    background-color: greenyellow;
-    text-align: center;
-    line-height: 200px;
+    /* height: 200px;*/
+    /*background-color: greenyellow;*/
+
 }
 
 
-/* sezione footer */
+
+
+
+
+
+
+/* regole sezione footer */
 
 footer{
     height: 300px;
