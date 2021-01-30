@@ -425,12 +425,12 @@ main {
 
 .text-learn h2 {
     margin: 10px 160px 5px 160px;
-    padding: 10px 0 20px 0;
+    padding: 20px 0;
 }
 
 .text-learn p {
     font-size: 11px;
-    margin: 10px 13% 20px 13%;
+    margin: 5px 13% 40px 13%;
 }
 
 
@@ -576,7 +576,7 @@ main {
 
 
 
- /* regole sezione LOGHI */
+ /* regole sezione pre footer */
 
 .customers {
     text-align: center;
@@ -586,6 +586,7 @@ main {
 .growing {
     text-align: left;
 }
+
 
 .customers p:first-child {
     font-size: 35px;
@@ -620,6 +621,11 @@ main {
 
 /* regole LOGHI */
 
+.loghi img {
+    height: 18px;
+    width: auto;
+    padding: 3px 3px;
+}
 
 .top-loghi ul, .bottom-loghi ul {
     list-style-type: none;
@@ -653,11 +659,21 @@ main {
     /*debug*/
     /* height: 200px;*/
     /*background-color: greenyellow;*/
-
 }
 
 
-
+.girl {
+    background-image: url(../img/woman.webp);
+    height: 300px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    background-size: 63%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*object-fit: cover;*/
+}
 
 
 
