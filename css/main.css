@@ -583,19 +583,6 @@ main {
 }
 
 
-.loghi-top img, .loghi-bottom img{
-    height: 15px;
-    width: auto;
-    margin-right: 20px;
-}
-
-.loghi-top, .loghi-bottom {
-    align-items: center;
-    justify-content: center;
-    margin-top: 8%;
-    min-width: 100%;
-}
-
 .growing {
     text-align: left;
 }
@@ -631,8 +618,18 @@ main {
 
 
 
+/* regole LOGHI */
 
 
+.top-loghi ul, .bottom-loghi ul {
+    list-style-type: none;
+    margin: 8% 0 0 0;
+}
+
+.top-loghi ul li, .bottom-loghi ul li {
+    display: inline-block;
+
+}
 
 .row-counter {
     width: 70%;
