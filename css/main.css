@@ -253,20 +253,49 @@ header{
 }
 
 .button-book span {
-    display: block;  /* per non invadere bloccoinferiore*/
+    display: block;  /* per non invadere sez. inferiore */
     margin-bottom: 30px;
 }
 
 .popular {
     float: left;
     width: 60%;
-    background-color: white;
     text-align: left;
     margin-top: 50px;
-    /*height: 500px;*/
     /*debug*/
-
+    /*height: 500px;*/
+    /*background-color: greenyellow;*/
 }
+
+/* inizio regole linea */
+
+.box-poplinea {
+    position: relative;
+    /*debug*/
+    /*background-color: yellow;*/
+}
+
+.text-linea {
+    width: 35%;
+    /*debug*/
+    /*background-color: hotpink;*/
+}
+
+.linea-1 {
+    position: absolute;
+    top: 15px;
+    right: 15%;
+    height: 1px;
+    width: 45%;
+    border: 0.8px solid lightslategrey;
+}
+
+.text-popular {
+    /*debug*/
+    /*background-color: green;*/
+}
+
+/* fine linea */
 
 .text-popular h3:last-of-type, .text-marketing h3:last-of-type, .text-sales h3:last-of-type, .text-service h3:last-of-type {
     margin: 15px 0;
@@ -290,6 +319,7 @@ header{
     margin-top: 60px;
     margin-bottom: 30px;
 }
+
 .linea {
     height: 1px;
     width: 80%;
@@ -305,8 +335,8 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
-
 }
+
 .img-marketing {
     background-image: url(../img/marketing.svg);
 
@@ -329,8 +359,6 @@ header{
     -webkit-box-shadow: 0 0 6px 1px rgba(172,172,172,0.9);
     box-shadow: 0 0 6px 1px rgba(172,172,172,0.9);
 }
-
-
 
 .left, .right {
     float: left;
@@ -384,9 +412,7 @@ header{
 
 #container-3 {
     background-color: #00adb4;
-
 }
-
 
 .text-learn {
     float: left;
@@ -572,7 +598,7 @@ header{
     margin-right: 12%;
     padding-top: 2%;
     /*debug*/
-    /* height: 200px;*/
+    /*height: 200px;*/
     /*background-color: deeppink;*/
 }
 
@@ -580,7 +606,7 @@ header{
     float: left;
     width: 56%;
     /*debug*/
-    /* height: 200px;*/
+    /*height: 200px;*/
     /*background-color: greenyellow;*/
 
 }
@@ -589,7 +615,7 @@ header{
     float: left;
     width: 50%;
     /*debug*/
-    /* height: 200px;*/
+    /*height: 200px;*/
     /*background-color: greenyellow;*/
 }
 
@@ -654,15 +680,16 @@ header{
     /*background-color: lightblue;*/
 }
 
+
 .top-loghi {
     margin-bottom: 15px;
     /*debug*/
-   /* background-color: lightpink;*/
+    /*background-color: lightpink;*/
 }
 
 .bottom-loghi {
-    /*debug*/
     margin-left: 50px;
+    /*debug*/
     /*background-color: forestgreen;*/
 }
 
