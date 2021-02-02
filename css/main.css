@@ -339,17 +339,14 @@ header{
 
 .img-marketing {
     background-image: url(../img/marketing.svg);
-
 }
 
 .img-service {
     background-image: url(../img/service.svg);
-
 }
 
 .img-sales {
     background-image: url(../img/sales.svg);
-
 }
 
 .left, .central, .right {
@@ -406,7 +403,6 @@ header{
     /*debug*/
     /*background-color: #4682B4;*/
 }
-
 
 /* regole sezione griglia */
 
@@ -510,7 +506,6 @@ header{
     text-align: center;
     /*debug*/
     /*background-color: red;*/
-
 }
 
 /* regole immagini griglia */
@@ -585,8 +580,6 @@ header{
     background-color: white;
 }
 
-/* regole generali sezione pre-footer */
-
 .customers, .loghi, .immagine {
     text-align: center;
 }
@@ -608,7 +601,6 @@ header{
     /*debug*/
     /*height: 200px;*/
     /*background-color: greenyellow;*/
-
 }
 
 .growing, .immagine {
@@ -630,7 +622,6 @@ header{
     background-size: 63%;
     background-repeat: no-repeat;
     background-position: center;
-    /*object-fit: cover;*/
 }
 
 
@@ -703,7 +694,6 @@ header{
     padding-right: 10px;
 }
 
-
 .top-loghi img:last-child, .top-loghi img:nth-child(3) {
     height: 22px;
     width: auto;
@@ -727,6 +717,7 @@ header{
 .row-counter, .row-growing {
     width: 70%;
     margin: 0 auto;
+    /*debug*/
     /*background-color: cornflowerblue;*/
 }
 
@@ -734,6 +725,7 @@ header{
     content: "";
     display: table;
     clear: both;
+    /*debug*/
     /* background-color: #4682B4; */
 }
 
@@ -741,9 +733,9 @@ header{
 
 footer{
     font-family: 'Poppins', sans-serif;
+    background-color: #2d3e50;
     /*debug*/
     /*height: 300px;*/
-    background-color: #2d3e50;
 }
 
 .row-footer {
@@ -751,6 +743,7 @@ footer{
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 50px;
+    /*debug*/
     /*background-color: deepskyblue;*/
 }
 
@@ -823,7 +816,6 @@ footer{
 }
 
 .row-lang {
-    /*width: 100%;*/
     margin: 0 auto;
     background-color: deepskyblue;
 }
@@ -853,7 +845,7 @@ footer{
     /*background-color: #4682B4;*/
 }
 
- /* regole sezione copyright */
+/* regole sezione copyright */
 
 .row-copy {
     width: 70%;
