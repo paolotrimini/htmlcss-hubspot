@@ -36,7 +36,6 @@ header{
 
 /* regole top header */
 
-
 .top-header {
     height: 50%;
     margin: 0 10%;
@@ -68,6 +67,7 @@ header{
 
 #nav-contatti li, #nav-login li, #nav-servizi li {
     display: inline-block;
+    list-style-type: none;
     padding: 0 10px;
     margin-top: 12.5px;
 }
@@ -109,7 +109,6 @@ header{
 
  /* regole bottom header */
 
-
 .bottom-header {
     height: 50%;
     /*debug*/
@@ -135,6 +134,7 @@ header{
     float: right;
     width: 50%;
     margin-right: 10%;
+    margin-top: 5px;
     text-align: right;
     /*debug*/
     /*background-color: #00adb4;*/
@@ -234,9 +234,7 @@ header{
     font-size: 11px;
 }
 
-
 /* regole blocco crm */
-
 
 #row-crm {
     width: 80%;
@@ -277,7 +275,7 @@ header{
     width: auto;
 }
 
-.button-book {
+.button-book, .button-growing {
     margin-top: 10px;
     margin-bottom: 60px;
 }
@@ -342,7 +340,6 @@ header{
     color: coral;
 }
 
-
 /* regole row servizi */
 
 .left .button-book, .central .button-book, .right .button-book {
@@ -365,7 +362,6 @@ header{
     height: 90px;
     width: auto;
 }
-
 
 .left, .central, .right {
     font-family: 'Poppins', sans-serif;
@@ -451,13 +447,11 @@ header{
     margin: 5px 13% 40px 13%;
 }
 
-
 .row-winning::after {
     content: "";
     display: table;
     clear: both;
 }
-
 
 /* regole inizio griglia */
 
@@ -491,39 +485,12 @@ header{
     border-bottom: 1px solid white;
 }
 
-
-.box-1 {
+.box-1, .box-2, .box-3, .box-4 {
     float: left;
     width: 25%;
     text-align: center;
     /*debug*/
     /*background-color: indianred;*/
-}
-
-
-.box-2 {
-    float: left;
-    width: 25%;
-    text-align: center;
-    /*debug*/
-    /*background-color: red;*/
-}
-
-.box-3 {
-    float: left;
-    width: 25%;
-    text-align: center;
-    /*debug*/
-    /*height: 200px;*/
-    /*background-color: indianred;*/
-
-}
-.box-4 {
-    float: left;
-    width: 25%;
-    text-align: center;
-    /*debug*/
-    /*background-color: red;*/
 }
 
 /* regole immagini griglia */
@@ -569,7 +536,6 @@ header{
     background-image: url(../img/growthhub-white-small-1.svg);
 }
 
-
 /* regole testo nei box della griglia */
 
 .row-tabella-1 .number, .row-tabella-2 .number {
@@ -591,7 +557,6 @@ header{
 
 /* fine regole griglia */
 
-
 /* regole sezione pre-footer */
 
 #container-4 {
@@ -601,7 +566,6 @@ header{
 .customers, .loghi, .immagine {
     text-align: center;
 }
-
 
 .customers {
     float: left;
@@ -629,19 +593,18 @@ header{
     /*background-color: greenyellow;*/
 }
 
-
-.girl {
-    background-image: url(../img/woman.webp);
-    height: 300px;
-    width: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 20%;
-    background-size: 63%;
-    background-repeat: no-repeat;
-    background-position: center;
+.button-growing {
+    margin-top: 40px;
 }
 
+.girl {
+    text-align: right;
+}
+
+.girl img {
+    height: 250px;
+    width: auto;
+}
 
 .customers p:nth-child(2) {
     text-align: left;
@@ -672,18 +635,16 @@ header{
     font-size: 30px;
 }
 
-
 .growing p:last-child {
     font-size: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
-
 /* regole loghi */
+
 .top-loghi img, .bottom-loghi img {
     vertical-align: middle;
 }
-
 
 .loghi {
     padding-right: 15px;
@@ -691,7 +652,6 @@ header{
     /*debug*/
     /*background-color: lightblue;*/
 }
-
 
 .top-loghi {
     margin-bottom: 15px;
@@ -782,7 +742,6 @@ footer{
     padding: 8px 7px;
 }
 
-
 .lista-1, .lista-2, .lista-3, .lista-4 {
     float: left;
     width: 25%;
@@ -790,7 +749,6 @@ footer{
     /*height: 200px;*/
     /*background-color: greenyellow;*/
 }
-
 
 .lista-1 li a, .lista-2 li a,.lista-3 li a, .lista-4 li a {
     text-decoration: none;
@@ -806,7 +764,6 @@ footer{
 .titolo-1 li:first-child, .titolo-2 li:first-child, .titolo-3 li:first-child, .titolo-4 li:first-child {
     padding-bottom: 12px;
 }
-
 
 .row-footer::after {
     content: "";
