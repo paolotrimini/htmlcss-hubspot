@@ -13,10 +13,10 @@ body {
 
 main {
     font-family: 'Poppins', sans-serif;
-    /*background-color: orange;*/
     color: #33475b;
+    /*debug*/
+    /*background-color: orange;*/
 }
-
 
 /* regole header */
 
@@ -25,33 +25,43 @@ header{
     width: 100%;
     font-size: 12px;
     font-family: 'Nunito', sans-serif;
-    /*debug*/
-    /*background-color: #F5FFFA;*/
     background-color: #f5f8fa;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    /*debug*/
+    /*background-color: #F5FFFA;*/
 }
 
 /* regole top header */
 
+
 .top-header {
     height: 50%;
     margin: 0 10%;
-    position: relative;
     /*debug*/
-    /*background-color: lightblue;*/
+    /*background-color: greenyellow;*/
 }
 
-#nav-contatti ul {
-    display: inline-block;
+.top-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#nav-contatti {
+    float: left;
 }
 
 #nav-login ul {
-    position: absolute;
+    float: right;
     top: 0;
     right: 5%;
+}
+
+#nav-login {
+    background-color: darkorange;
 }
 
 /* caratteristiche nav-bar header */
@@ -75,9 +85,10 @@ header{
 }
 
 .login a, .orangebutton a {
-    /*padding: 4px 12px 4px 12px;*/
     padding: 4px 12px;
     border-radius: 3px;
+    /*debug*/
+    /*padding: 4px 12px 4px 12px;*/
 }
 
 .login a {
@@ -92,6 +103,7 @@ header{
 .orangebutton a {
     background-color: coral;
     color: white;
+    display: inline-block;
 }
 
 
@@ -100,19 +112,39 @@ header{
 
 .bottom-header {
     height: 50%;
-    position: relative;
     /*debug*/
     background-color: #F5FFFA;
 }
 
+#logo {
+    float: left;
+    width: 20%;
+    margin-left: 11%;
+    margin-top: 10px;
+    /*debug*/
+    /*background-color: red;*/
+}
+
 #logo img {
-    margin: 10px 11%;
+    float: left;
+    vertical-align: middle;
+    /*background-color: yellow;*/
 }
 
 #nav-servizi ul {
-    position: absolute;
-    top: 0;
-    right: 14%;
+    float: right;
+    width: 50%;
+    margin-right: 10%;
+    text-align: right;
+    /*debug*/
+    /*background-color: #00adb4;*/
+}
+
+
+.bottom-header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* regole generali button arancioni */
@@ -131,8 +163,8 @@ header{
     margin-top: 100px; /* parte alla fine dell'header*/
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: 75% 10%;
+    background-size: cover;
+    /*border-bottom: 3px solid #3c5567;*/
     /*debug*/
     /*background-color: #fff2ee;*/
 }
@@ -154,14 +186,14 @@ header{
     font-size: 11px;
 }
 
-.blocco-interlinea {
+/*.blocco-interlinea {
     height: 60px;
     background-color: #a6e9e1;
     border-top: 2px solid #33475b;
     border-bottom: 2px solid #33475b;
-    text-align: center;
-    line-height: 60px;
-}
+    !*debug*!
+    !*line-height: 60px;*!
+}*/
 
 .box-title .free-tools {
     margin-top: 50px;
@@ -175,7 +207,7 @@ header{
 }
 
 #blocco-rubik {
-    height: 400px;
+    height: 340px;
     width: 80%;
     margin: 10px auto;
     text-align: center;
@@ -184,15 +216,14 @@ header{
 }
 
 .cubo {
-    height: 250px;
-    width: 250px;
-    background-color: #f5f8fa;
-    background-image: url(../img/cube.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    margin: 0 auto;
+    margin-top: 50px;
 }
+
+.cubo img {
+    height: 200px;
+    width: auto;
+}
+
 
 #blocco-rubik h2 {
     font-size: 22px;
@@ -238,18 +269,17 @@ header{
 }
 
 .img-book {
-    background-image: url(../img/book.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    object-fit: cover;
-    width: 100%;
+    margin-top: 60px;
+}
+
+.img-book img {
     height: 90px;
-    margin-top: 50px;
+    width: auto;
 }
 
 .button-book {
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .button-book span {
@@ -327,27 +357,15 @@ header{
     margin: 15px 12%;
 }
 
-.img-marketing, .img-service, .img-sales {
-    width: 100%;
-    height: 100px;
+.img-marketing, .img-sales, .img-service {
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
 }
 
-.img-marketing {
-    background-image: url(../img/marketing.svg);
+.img-marketing img, .img-sales img, .img-service img {
+    height: 90px;
+    width: auto;
 }
 
-.img-service {
-    background-image: url(../img/service.svg);
-}
-
-.img-sales {
-    background-image: url(../img/sales.svg);
-}
 
 .left, .central, .right {
     font-family: 'Poppins', sans-serif;
@@ -662,6 +680,9 @@ header{
 
 
 /* regole loghi */
+.top-loghi img, .bottom-loghi img {
+    vertical-align: middle;
+}
 
 
 .loghi {
@@ -752,6 +773,7 @@ footer{
 }
 
 .btn-footer a {
+    display: inline-block;
     text-decoration: none;
     font-size: 11px;
     color: #2d3e50;
