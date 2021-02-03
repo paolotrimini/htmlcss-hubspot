@@ -164,7 +164,7 @@ header{
     background-image: url(../img/jumbotron.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /*border-bottom: 3px solid #3c5567;*/
+    border-bottom: 3px solid #3c5567;
     /*debug*/
     /*background-color: #fff2ee;*/
 }
@@ -204,6 +204,7 @@ header{
 
 #container-2 {
     background-color: #f5f8fa;
+
 }
 
 #blocco-rubik {
